@@ -32,7 +32,7 @@ $username = 'admin'; //trim($values["email"]);
 $password = 'admin'; //trim($values["password"]);
 
 //set the directory for the cookie using defined document root var
-$dir = DOC_ROOT."/ctemp";
+$dir = "/var/www/dev_project1/public_html/ctemp";
 //build a unique path with every request to store 
 //the info per user with custom func. 
 $path = build_unique_path($dir);
