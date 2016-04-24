@@ -68,6 +68,9 @@ curl_exec($ch);
 curl_setopt($ch, CURLOPT_URL, "http://152.62.101.224/MyReport_view.php");
 //do stuff with the info with DomDocument() etc
 $html = curl_exec($ch);
+
+echo $html;
+
 curl_close($ch);
 
 
