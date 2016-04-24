@@ -32,16 +32,17 @@ $username = 'admin'; //trim($values["email"]);
 $password = 'admin'; //trim($values["password"]);
 
 //set the directory for the cookie using defined document root var
-$dir = "/var/www/dev_project1/public_html/ctemp";
+//$dir = "/var/www/dev_project1/public_html/ctemp";
 //build a unique path with every request to store 
 //the info per user with custom func. 
-$path = build_unique_path($dir);
+//$path = build_unique_path($dir);
 
 //login form action url
 $url="http://152.62.101.224/index.php?signIn=1"; 
 $postinfo = "username=".$username."&password=".$password;
 
-$cookie_file_path = $path."/cookie.txt";
+//$cookie_file_path = $path."/cookie.txt";
+$cookie_file_path = "/var/www/dev_project1/public_html/ctemp//cookie.txt";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_HEADER, false);
