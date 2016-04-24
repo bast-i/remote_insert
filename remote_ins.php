@@ -6,7 +6,7 @@ $ch = curl_init();
 $postData = array(
     'login' => '<admin></admin>',
     'pwd' => 'admin',
-    'redirect_to' => 'http://152.62.101.224/',
+    'redirect_to' => 'http://152.62.101.224/MyReport_view.php',
     'testcookie' => '1'
 );
 
