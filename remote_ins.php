@@ -1,6 +1,6 @@
 <?php
 
-<?php
+
 $postData = array(
     'login' => '<admin></admin>',
     'pwd' => 'admin',
