@@ -14,3 +14,6 @@ $response = $client->post('http://152.62.101.224/index.php?signIn=1', [
 
 $xml = $response;
 echo $xml;
+
+
+?>
