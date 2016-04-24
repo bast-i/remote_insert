@@ -56,7 +56,7 @@ curl_setopt($ch, CURLOPT_COOKIE, "cookiename=0");
 curl_setopt($ch, CURLOPT_USERAGENT,
     "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.12) Gecko/20050915 Firefox/1.0.7");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_REFERER, $_SERVER['REQUEST_URI']);
+curl_setopt($ch, CURLOPT_REFERER, $HTTP_SERVER_VARS['REQUEST_URI']);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
 
